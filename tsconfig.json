@@ -5,6 +5,8 @@
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
+        "noUnusedLocals": true,
+        "pretty": true,
         "sourceMap": true,
         "outDir": "./dist",
         "target": "es5"

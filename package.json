@@ -6,14 +6,21 @@
   "author": "Christian Ebner <christian.ebner@outlook.de>",
   "license": "MIT",
   "dependencies": {
+    "browser-sync": "^2.17.5",
     "browsersync": "^0.0.1-security",
     "d3": "^4.3.0",
+    "global": "^4.3.1",
     "systemjs": "^0.19.40",
     "tslint": "^3.15.1",
     "typescript": "^2.0.7"
   },
   "scripts": {
+    "clean": "rm -r dist/*",
     "start": "browser-sync start -s -f index.html dist --no-ui --no-notify",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "lint": "tslint **.ts",
+
+    "dev": "tsc --watch & npm run start"
+
   }
 }
