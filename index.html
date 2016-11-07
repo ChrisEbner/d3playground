@@ -6,9 +6,19 @@
     
 </head>
 <body>
-    
+    <div id="ceb-app"></div>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="dist/app.js"></script>
+<script src="dist/system.js"></script>
+
+<script>
+    SystemJS.config({
+        baseURL: '/dist'
+    });
+
+    SystemJS.defaultJSExtensions = true;
+    SystemJS.import('app.js')
+
+</script>
+
 </body>
 </html>
