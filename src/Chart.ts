@@ -1,15 +1,12 @@
 export default class Chart {
-    private _containerId: string;
     private _chartElement: HTMLElement | null;
-    private _maxWidth: number;
-    private _dataFilePath: string;
     private _width: number;
 
-    constructor(containerId: string, dataFilePath: string, maxWidth: number) {
-        this._containerId = containerId;
+    constructor(private _containerId: string, private _dataFilePath: string, private _maxWidth: number) {
+        this._containerId = _containerId;
         this._chartElement = null;
-        this._maxWidth = maxWidth;
-        this._dataFilePath = dataFilePath;
+        this._maxWidth = _maxWidth;
+        this._dataFilePath = _dataFilePath;
     }
 
     public spawnChart() {

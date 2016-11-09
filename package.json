@@ -20,6 +20,8 @@
     "watch": "tsc --watch",
     "lint": "tslint **.ts",
 
+    "prestart": "cp node_modules/systemjs/dist/system.js dist/ && cp node_modules/systemjs/dist/system-polyfills.js dist/",
+    "predev": "cp node_modules/systemjs/dist/system.js dist/ && cp node_modules/systemjs/dist/system-polyfills.js dist/",
     "dev": "tsc --watch & npm run start"
 
   }
